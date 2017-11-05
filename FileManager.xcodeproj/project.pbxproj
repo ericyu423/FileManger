@@ -12,20 +12,45 @@
 		D46A51331FAE83ED00A00F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46A51311FAE83ED00A00F21 /* Main.storyboard */; };
 		D46A51351FAE83ED00A00F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46A51341FAE83ED00A00F21 /* Assets.xcassets */; };
 		D46A51381FAE83ED00A00F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46A51361FAE83ED00A00F21 /* LaunchScreen.storyboard */; };
+		D46A51461FAF890600A00F21 /* FileMangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A51451FAF890600A00F21 /* FileMangerTests.swift */; };
+		D46A514F1FAFBB1600A00F21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A514E1FAFBB1600A00F21 /* SecondViewController.swift */; };
+		D46A51511FAFBCB800A00F21 /* mySpeicalFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = D46A51501FAFBCB800A00F21 /* mySpeicalFile.txt */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D46A51481FAF890600A00F21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D46A51221FAE83ED00A00F21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46A51291FAE83ED00A00F21;
+			remoteInfo = FileManger;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		D46A512A1FAE83ED00A00F21 /* FileManger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46A512A1FAE83ED00A00F21 /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46A512D1FAE83ED00A00F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46A512F1FAE83ED00A00F21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D46A51321FAE83ED00A00F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D46A51341FAE83ED00A00F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46A51371FAE83ED00A00F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D46A51391FAE83ED00A00F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46A51431FAF890600A00F21 /* FileManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46A51451FAF890600A00F21 /* FileMangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMangerTests.swift; sourceTree = "<group>"; };
+		D46A51471FAF890600A00F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46A514E1FAFBB1600A00F21 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D46A51501FAFBCB800A00F21 /* mySpeicalFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mySpeicalFile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D46A51271FAE83ED00A00F21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46A51401FAF890600A00F21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				D46A512C1FAE83ED00A00F21 /* FileManger */,
+				D46A51441FAF890600A00F21 /* FileMangerTests */,
 				D46A512B1FAE83ED00A00F21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +72,8 @@
 		D46A512B1FAE83ED00A00F21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D46A512A1FAE83ED00A00F21 /* FileManger.app */,
+				D46A512A1FAE83ED00A00F21 /* FileManager.app */,
+				D46A51431FAF890600A00F21 /* FileManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +83,8 @@
 			children = (
 				D46A512D1FAE83ED00A00F21 /* AppDelegate.swift */,
 				D46A512F1FAE83ED00A00F21 /* ViewController.swift */,
+				D46A514E1FAFBB1600A00F21 /* SecondViewController.swift */,
+				D46A51501FAFBCB800A00F21 /* mySpeicalFile.txt */,
 				D46A51311FAE83ED00A00F21 /* Main.storyboard */,
 				D46A51341FAE83ED00A00F21 /* Assets.xcassets */,
 				D46A51361FAE83ED00A00F21 /* LaunchScreen.storyboard */,
@@ -64,12 +93,21 @@
 			path = FileManger;
 			sourceTree = "<group>";
 		};
+		D46A51441FAF890600A00F21 /* FileMangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D46A51451FAF890600A00F21 /* FileMangerTests.swift */,
+				D46A51471FAF890600A00F21 /* Info.plist */,
+			);
+			path = FileMangerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D46A51291FAE83ED00A00F21 /* FileManger */ = {
+		D46A51291FAE83ED00A00F21 /* FileManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D46A513C1FAE83ED00A00F21 /* Build configuration list for PBXNativeTarget "FileManger" */;
+			buildConfigurationList = D46A513C1FAE83ED00A00F21 /* Build configuration list for PBXNativeTarget "FileManager" */;
 			buildPhases = (
 				D46A51261FAE83ED00A00F21 /* Sources */,
 				D46A51271FAE83ED00A00F21 /* Frameworks */,
@@ -79,10 +117,28 @@
 			);
 			dependencies = (
 			);
-			name = FileManger;
+			name = FileManager;
 			productName = FileManger;
-			productReference = D46A512A1FAE83ED00A00F21 /* FileManger.app */;
+			productReference = D46A512A1FAE83ED00A00F21 /* FileManager.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D46A51421FAF890600A00F21 /* FileManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46A514A1FAF890600A00F21 /* Build configuration list for PBXNativeTarget "FileManagerTests" */;
+			buildPhases = (
+				D46A513F1FAF890600A00F21 /* Sources */,
+				D46A51401FAF890600A00F21 /* Frameworks */,
+				D46A51411FAF890600A00F21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46A51491FAF890600A00F21 /* PBXTargetDependency */,
+			);
+			name = FileManagerTests;
+			productName = FileMangerTests;
+			productReference = D46A51431FAF890600A00F21 /* FileManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,9 +154,14 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					D46A51421FAF890600A00F21 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D46A51291FAE83ED00A00F21;
+					};
 				};
 			};
-			buildConfigurationList = D46A51251FAE83ED00A00F21 /* Build configuration list for PBXProject "FileManger" */;
+			buildConfigurationList = D46A51251FAE83ED00A00F21 /* Build configuration list for PBXProject "FileManager" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +174,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D46A51291FAE83ED00A00F21 /* FileManger */,
+				D46A51291FAE83ED00A00F21 /* FileManager */,
+				D46A51421FAF890600A00F21 /* FileManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +187,15 @@
 			files = (
 				D46A51381FAE83ED00A00F21 /* LaunchScreen.storyboard in Resources */,
 				D46A51351FAE83ED00A00F21 /* Assets.xcassets in Resources */,
+				D46A51511FAFBCB800A00F21 /* mySpeicalFile.txt in Resources */,
 				D46A51331FAE83ED00A00F21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46A51411FAF890600A00F21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +206,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46A514F1FAFBB1600A00F21 /* SecondViewController.swift in Sources */,
 				D46A51301FAE83ED00A00F21 /* ViewController.swift in Sources */,
 				D46A512E1FAE83ED00A00F21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D46A513F1FAF890600A00F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46A51461FAF890600A00F21 /* FileMangerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D46A51491FAF890600A00F21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46A51291FAE83ED00A00F21 /* FileManager */;
+			targetProxy = D46A51481FAF890600A00F21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D46A51311FAE83ED00A00F21 /* Main.storyboard */ = {
@@ -300,10 +387,42 @@
 			};
 			name = Release;
 		};
+		D46A514B1FAF890600A00F21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XFDXLZRBS4;
+				INFOPLIST_FILE = FileMangerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyu423.FileMangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileManager.app/FileManager";
+			};
+			name = Debug;
+		};
+		D46A514C1FAF890600A00F21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XFDXLZRBS4;
+				INFOPLIST_FILE = FileMangerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyu423.FileMangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileManager.app/FileManager";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D46A51251FAE83ED00A00F21 /* Build configuration list for PBXProject "FileManger" */ = {
+		D46A51251FAE83ED00A00F21 /* Build configuration list for PBXProject "FileManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D46A513A1FAE83ED00A00F21 /* Debug */,
@@ -312,11 +431,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D46A513C1FAE83ED00A00F21 /* Build configuration list for PBXNativeTarget "FileManger" */ = {
+		D46A513C1FAE83ED00A00F21 /* Build configuration list for PBXNativeTarget "FileManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D46A513D1FAE83ED00A00F21 /* Debug */,
 				D46A513E1FAE83ED00A00F21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46A514A1FAF890600A00F21 /* Build configuration list for PBXNativeTarget "FileManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46A514B1FAF890600A00F21 /* Debug */,
+				D46A514C1FAF890600A00F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

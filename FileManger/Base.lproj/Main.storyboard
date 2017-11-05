@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileManger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS3-q3-fvi">
+                                <rect key="frame" x="16" y="20" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zoe-DN-sa9">
+                                <rect key="frame" x="16" y="49" width="343" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="598" id="l2W-Tf-0iN"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrO-7d-aNl">
+                                <rect key="frame" x="0.0" y="575" width="375" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="BJh-ew-pAM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="9kq-zC-2AK" kind="show" id="qdY-15-9bM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zrO-7d-aNl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jox-fd-7Wq"/>
+                            <constraint firstItem="zoe-DN-sa9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NpZ-E3-FnX"/>
+                            <constraint firstItem="zoe-DN-sa9" firstAttribute="leading" secondItem="LS3-q3-fvi" secondAttribute="leading" id="PrC-BW-aDu"/>
+                            <constraint firstAttribute="bottom" secondItem="zoe-DN-sa9" secondAttribute="bottom" constant="20" symbolic="YES" id="RYe-YW-gTU"/>
+                            <constraint firstItem="zrO-7d-aNl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aXE-VR-Ynq"/>
+                            <constraint firstItem="zrO-7d-aNl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="arc-si-WC0"/>
+                            <constraint firstItem="zoe-DN-sa9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="awm-fd-yT5"/>
+                            <constraint firstItem="zoe-DN-sa9" firstAttribute="top" secondItem="LS3-q3-fvi" secondAttribute="bottom" constant="8" symbolic="YES" id="yZO-S0-OBX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dailyTask" destination="zoe-DN-sa9" id="7gW-Vk-LIh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="t0n-Y5-O2Z">
+            <objects>
+                <viewController id="9kq-zC-2AK" customClass="SecondViewController" customModule="FileManager" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NX2-ve-xBp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNd-hc-e1O">
+                                <rect key="frame" x="0.0" y="580" width="375" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="hbk-vL-7Ax"/>
+                                </constraints>
+                                <state key="normal" title="Load File"/>
+                                <connections>
+                                    <action selector="LoadFile:" destination="9kq-zC-2AK" eventType="touchUpInside" id="0zW-Uh-BL9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8mt-rP-R0d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RNd-hc-e1O" firstAttribute="trailing" secondItem="qqB-Mm-rHK" secondAttribute="trailing" id="2ru-9S-JxU"/>
+                            <constraint firstItem="8mt-rP-R0d" firstAttribute="top" secondItem="NX2-ve-xBp" secondAttribute="top" id="INg-Zt-vyf"/>
+                            <constraint firstItem="RNd-hc-e1O" firstAttribute="top" secondItem="8mt-rP-R0d" secondAttribute="bottom" constant="8" id="YEu-jD-21e"/>
+                            <constraint firstItem="RNd-hc-e1O" firstAttribute="bottom" secondItem="qqB-Mm-rHK" secondAttribute="bottom" id="hZp-dr-NNv"/>
+                            <constraint firstItem="RNd-hc-e1O" firstAttribute="leading" secondItem="qqB-Mm-rHK" secondAttribute="leading" id="jE4-9q-Ufy"/>
+                            <constraint firstItem="8mt-rP-R0d" firstAttribute="leading" secondItem="qqB-Mm-rHK" secondAttribute="leading" id="jOd-vD-y4h"/>
+                            <constraint firstItem="8mt-rP-R0d" firstAttribute="trailing" secondItem="qqB-Mm-rHK" secondAttribute="trailing" id="vl5-qc-1qa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qqB-Mm-rHK"/>
+                    </view>
+                    <connections>
+                        <outlet property="fileTextView" destination="8mt-rP-R0d" id="UXG-c8-G8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2W-jg-uhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="621.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
