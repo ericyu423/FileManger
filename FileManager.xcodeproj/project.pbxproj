@@ -16,6 +16,8 @@
 		D46A514F1FAFBB1600A00F21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A514E1FAFBB1600A00F21 /* SecondViewController.swift */; };
 		D46A51511FAFBCB800A00F21 /* mySpeicalFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = D46A51501FAFBCB800A00F21 /* mySpeicalFile.txt */; };
 		D46A51531FAFD44500A00F21 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A51521FAFD44500A00F21 /* ThirdViewController.swift */; };
+		D46A51551FAFEDDF00A00F21 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A51541FAFEDDF00A00F21 /* Book.swift */; };
+		D46A515B1FAFF14100A00F21 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A515A1FAFF14100A00F21 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		D46A514E1FAFBB1600A00F21 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D46A51501FAFBCB800A00F21 /* mySpeicalFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mySpeicalFile.txt; sourceTree = "<group>"; };
 		D46A51521FAFD44500A00F21 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D46A51541FAFEDDF00A00F21 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		D46A515A1FAFF14100A00F21 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				D46A512F1FAE83ED00A00F21 /* ViewController.swift */,
 				D46A514E1FAFBB1600A00F21 /* SecondViewController.swift */,
 				D46A51521FAFD44500A00F21 /* ThirdViewController.swift */,
+				D46A515A1FAFF14100A00F21 /* FourthViewController.swift */,
+				D46A51541FAFEDDF00A00F21 /* Book.swift */,
 				D46A51501FAFBCB800A00F21 /* mySpeicalFile.txt */,
 				D46A51311FAE83ED00A00F21 /* Main.storyboard */,
 				D46A51341FAE83ED00A00F21 /* Assets.xcassets */,
@@ -211,7 +217,9 @@
 			files = (
 				D46A514F1FAFBB1600A00F21 /* SecondViewController.swift in Sources */,
 				D46A51301FAE83ED00A00F21 /* ViewController.swift in Sources */,
+				D46A515B1FAFF14100A00F21 /* FourthViewController.swift in Sources */,
 				D46A51531FAFD44500A00F21 /* ThirdViewController.swift in Sources */,
+				D46A51551FAFEDDF00A00F21 /* Book.swift in Sources */,
 				D46A512E1FAE83ED00A00F21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
