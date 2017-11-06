@@ -16,34 +16,20 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var fileTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
- 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     //this should be in didFinsihLuachingWithOption
     
     func getBundleFile(){
-        
         //get file pathfrom bundle (FileManager bundle)
         let filePath = Bundle.main.path(forResource: "mySpeicalFile", ofType: "txt")
-        
         let manager = FileManager.default
         if let filePath = filePath,let data = manager.contents(atPath: filePath){
             let message = String(data: data, encoding: .utf8)
-            
             fileTextView.text = message
-            
         }else{
-            
             print("file not found")
         }
-        
-        
     }
-
 }
